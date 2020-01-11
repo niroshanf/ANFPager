@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ANFPager_Example' do
+  pod 'ANFPager', :path => '../'
+
+  target 'ANFPager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
