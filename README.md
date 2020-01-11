@@ -1,6 +1,6 @@
 # ANFPager
 
-[![CI Status](https://img.shields.io/travis/Anthony Fernandez/ANFPager.svg?style=flat)](https://travis-ci.org/Anthony Fernandez/ANFPager)
+[![CI Status](https://img.shields.io/travis/niroshanf/ANFPager.svg?style=flat)](https://gitlab.com/niroshanf/ANFPager)
 [![Version](https://img.shields.io/cocoapods/v/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 [![License](https://img.shields.io/cocoapods/l/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 [![Platform](https://img.shields.io/cocoapods/p/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
@@ -22,7 +22,7 @@ pod 'ANFPager'
 
 ## Author
 
-Anthony Fernandez, anthony.fernandez@alarabiya.net
+Anthony Niroshan Fernandez, niroshanf@gmail.com
 
 ## License
 
