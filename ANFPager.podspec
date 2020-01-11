@@ -25,7 +25,7 @@ A Pageview Controller that support both orientations and LTR / RTL language. Eas
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anthony Fernandez' => 'niroshanf@gmail.com' }
-  s.source           = { :git => 'https://github.com/niroshanf/ANFPager', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/niroshanf/ANFPager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
