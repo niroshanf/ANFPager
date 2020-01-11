@@ -1,0 +1,16 @@
+PODS:
+  - ANFPager (0.1.0)
+
+DEPENDENCIES:
+  - ANFPager (from `../`)
+
+EXTERNAL SOURCES:
+  ANFPager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ANFPager: a7cb47ace7fc4e2fd8f237e8b9f2b057dfdd7b34
+
+PODFILE CHECKSUM: 6b3be0cd16151f7dea2c63d18eae369a0050a058
+
+COCOAPODS: 1.8.4

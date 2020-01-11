@@ -1,0 +1,22 @@
+{
+  "name": "ANFPager",
+  "version": "0.1.0",
+  "summary": "A short description of ANFPager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Anthony Fernandez/ANFPager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Anthony Fernandez": "anthony.fernandez@alarabiya.net"
+  },
+  "source": {
+    "git": "https://github.com/Anthony Fernandez/ANFPager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ANFPager/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_ANFPager_Example {
+  umbrella header "Pods-ANFPager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
