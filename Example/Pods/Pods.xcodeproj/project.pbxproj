@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0211A07A1BEFEF4AE9B94A4931C84AE8 /* Pods-ANFPager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CE8067A259FBC4715E9BB243F2814 /* Pods-ANFPager_Tests-dummy.m */; };
 		08A139BD48358F87B253029E0684B21F /* Pods-ANFPager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F27137A7EA0636919FEE435C655322 /* Pods-ANFPager_Example-dummy.m */; };
+		08EBF64F23CA033A00E790E9 /* PagerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EBF64E23CA033A00E790E9 /* PagerManager.swift */; };
+		08EBF65123CA036A00E790E9 /* DefaultUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EBF65023CA036A00E790E9 /* DefaultUIPageViewController.swift */; };
 		0DD49A3A49DAB1327899868B3A8726F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1C4D9EBA16630CD325F640B63791A918 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37690E8F35095FC802F3F96C714547B4 /* ReplaceMe.swift */; };
 		4142DF25E119C4012CDF2D3D6ECE61A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4AFE84B9ABE3C957ECB221A56261D111 /* Pods-ANFPager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883CD28D0FFCC69B895DCB042AC99A71 /* Pods-ANFPager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B54841EEC52A31C615A4DA66AA38B00D /* ANFPager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6AF23A846290A2F1A5E9A03154548 /* ANFPager-dummy.m */; };
@@ -38,10 +39,11 @@
 
 /* Begin PBXFileReference section */
 		0402E9DBD1BD728266B8DCD82B886671 /* Pods-ANFPager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANFPager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		08EBF64E23CA033A00E790E9 /* PagerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerManager.swift; sourceTree = "<group>"; };
+		08EBF65023CA036A00E790E9 /* DefaultUIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUIPageViewController.swift; sourceTree = "<group>"; };
 		0A76F45CB24093C236110BEA2D2076F2 /* Pods_ANFPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANFPager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC6AF23A846290A2F1A5E9A03154548 /* ANFPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANFPager-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37690E8F35095FC802F3F96C714547B4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ANFPager/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		3BEB70E34D94767165679FD2EAD0F862 /* ANFPager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANFPager.xcconfig; sourceTree = "<group>"; };
 		3D7B806E9BB29262CEC2C2A4C116539D /* Pods-ANFPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANFPager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4EFD6A4430DC9FF0588311C62C4C83F3 /* Pods-ANFPager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANFPager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,9 +136,10 @@
 		49FF863DD990A065C7685D6C7A5BCB83 /* ANFPager */ = {
 			isa = PBXGroup;
 			children = (
-				37690E8F35095FC802F3F96C714547B4 /* ReplaceMe.swift */,
 				8E7938C3EB7205BBC075BD58E3641139 /* Pod */,
 				0807F0601CE082C1AC9DAD47B7042BE3 /* Support Files */,
+				08EBF64E23CA033A00E790E9 /* PagerManager.swift */,
+				08EBF65023CA036A00E790E9 /* DefaultUIPageViewController.swift */,
 			);
 			name = ANFPager;
 			path = ../..;
@@ -378,8 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EBF65123CA036A00E790E9 /* DefaultUIPageViewController.swift in Sources */,
 				B54841EEC52A31C615A4DA66AA38B00D /* ANFPager-dummy.m in Sources */,
-				1C4D9EBA16630CD325F640B63791A918 /* ReplaceMe.swift in Sources */,
+				08EBF64F23CA033A00E790E9 /* PagerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BEB70E34D94767165679FD2EAD0F862 /* ANFPager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -458,7 +463,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ANFPager/ANFPager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ANFPager/ANFPager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ANFPager/ANFPager.modulemap";
 				PRODUCT_MODULE_NAME = ANFPager;
@@ -478,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BEB70E34D94767165679FD2EAD0F862 /* ANFPager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -490,7 +496,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ANFPager/ANFPager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ANFPager/ANFPager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ANFPager/ANFPager.modulemap";
 				PRODUCT_MODULE_NAME = ANFPager;
@@ -498,6 +504,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
