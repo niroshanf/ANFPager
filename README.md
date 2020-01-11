@@ -1,6 +1,6 @@
 # ANFPager
 
-[![CI Status](https://img.shields.io/travis/niroshanf/ANFPager.svg?style=flat)](https://gitlab.com/niroshanf/ANFPager)
+[![CI Status](https://img.shields.io/travis/niroshanf/ANFPager.svg?style=flat)](https://github.com/niroshanf/ANFPager)
 [![Version](https://img.shields.io/cocoapods/v/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 [![License](https://img.shields.io/cocoapods/l/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 [![Platform](https://img.shields.io/cocoapods/p/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)

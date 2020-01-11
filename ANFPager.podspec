@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 A Pageview Controller that support both orientations and LTR / RTL language. Easy to setup.
                        DESC
 
-  s.homepage         = 'https://gitlab.com/niroshanf/ANFPager'
+  s.homepage         = 'https://github.com/niroshanf/ANFPager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anthony Fernandez' => 'niroshanf@gmail.com' }
-  s.source           = { :git => 'https://gitlab.com/niroshanf/ANFPager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/niroshanf/ANFPager', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
