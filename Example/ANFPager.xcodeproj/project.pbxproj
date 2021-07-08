@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08EBF65323CA04A800E790E9 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EBF65223CA04A800E790E9 /* ArticleViewController.swift */; };
+		080274A82697059F000747EF /* SectionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080274A72697059F000747EF /* SectionHomeViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		007AC805FF40DD66BD3575AC /* Pods-ANFPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Example.release.xcconfig"; path = "Target Support Files/Pods-ANFPager_Example/Pods-ANFPager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		08EBF65223CA04A800E790E9 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		080274A72697059F000747EF /* SectionHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHomeViewController.swift; sourceTree = "<group>"; };
 		170B2E589BA8F7947511503E /* Pods-ANFPager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Tests.release.xcconfig"; path = "Target Support Files/Pods-ANFPager_Tests/Pods-ANFPager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		184DCF8758B6B4B57A1DE49A /* Pods-ANFPager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ANFPager_Tests/Pods-ANFPager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		33C868EB9D63CE251BF51160 /* Pods_ANFPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANFPager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				080274A72697059F000747EF /* SectionHomeViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				08EBF65223CA04A800E790E9 /* ArticleViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -334,8 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				08EBF65323CA04A800E790E9 /* ArticleViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				080274A82697059F000747EF /* SectionHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

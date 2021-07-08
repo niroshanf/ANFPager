@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-X1-x0H">
                                 <rect key="frame" x="0.0" y="8" width="375" height="651"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,5 +41,59 @@
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
         </scene>
+        <!--Section Home View Controller-->
+        <scene sceneID="PHX-4f-4eI">
+            <objects>
+                <viewController storyboardIdentifier="SectionVC" id="Xkh-eG-c1n" customClass="SectionHomeViewController" customModule="ANFPager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rsl-gH-gIE"/>
+                        <viewControllerLayoutGuide type="bottom" id="VhP-SL-uNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0MO-fq-4g7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-b8-zrm">
+                                <rect key="frame" x="20" y="30" width="74" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s35-Mf-Aep">
+                                <rect key="frame" x="20" y="72" width="74" height="4"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="JUL-U9-Kha"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pfM-b8-zrm" firstAttribute="leading" secondItem="0MO-fq-4g7" secondAttribute="leading" constant="20" id="278-Cy-JSr"/>
+                            <constraint firstItem="s35-Mf-Aep" firstAttribute="trailing" secondItem="pfM-b8-zrm" secondAttribute="trailing" id="7rb-5U-2fV"/>
+                            <constraint firstItem="pfM-b8-zrm" firstAttribute="top" secondItem="Rsl-gH-gIE" secondAttribute="bottom" constant="30" id="Nkg-fr-Bst"/>
+                            <constraint firstItem="s35-Mf-Aep" firstAttribute="top" secondItem="pfM-b8-zrm" secondAttribute="bottom" constant="5" id="cwJ-WI-4IL"/>
+                            <constraint firstItem="s35-Mf-Aep" firstAttribute="leading" secondItem="pfM-b8-zrm" secondAttribute="leading" id="fdx-Zv-Yyz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="line" destination="s35-Mf-Aep" id="u8i-Pv-9Vd"/>
+                        <outlet property="section" destination="pfM-b8-zrm" id="lT0-NI-pcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZX-Fc-KMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="116"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
