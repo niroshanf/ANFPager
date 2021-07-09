@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0211A07A1BEFEF4AE9B94A4931C84AE8 /* Pods-ANFPager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CE8067A259FBC4715E9BB243F2814 /* Pods-ANFPager_Tests-dummy.m */; };
+		0875396F2698633A00A711D8 /* screenshot1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0875396D2698633A00A711D8 /* screenshot1.gif */; };
+		087539702698633A00A711D8 /* screenshot2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0875396E2698633A00A711D8 /* screenshot2.gif */; };
 		08A139BD48358F87B253029E0684B21F /* Pods-ANFPager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F27137A7EA0636919FEE435C655322 /* Pods-ANFPager_Example-dummy.m */; };
 		08EBF64F23CA033A00E790E9 /* PagerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EBF64E23CA033A00E790E9 /* PagerManager.swift */; };
 		08EBF65123CA036A00E790E9 /* DefaultUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EBF65023CA036A00E790E9 /* DefaultUIPageViewController.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		0402E9DBD1BD728266B8DCD82B886671 /* Pods-ANFPager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANFPager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0875396D2698633A00A711D8 /* screenshot1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot1.gif; sourceTree = "<group>"; };
+		0875396E2698633A00A711D8 /* screenshot2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot2.gif; sourceTree = "<group>"; };
 		08EBF64E23CA033A00E790E9 /* PagerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerManager.swift; sourceTree = "<group>"; };
 		08EBF65023CA036A00E790E9 /* DefaultUIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUIPageViewController.swift; sourceTree = "<group>"; };
 		0A76F45CB24093C236110BEA2D2076F2 /* Pods_ANFPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANFPager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,15 @@
 			path = "Example/Pods/Target Support Files/ANFPager";
 			sourceTree = "<group>";
 		};
+		0875396C2698632900A711D8 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0875396D2698633A00A711D8 /* screenshot1.gif */,
+				0875396E2698633A00A711D8 /* screenshot2.gif */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		0F8493DAF5A4E5C0BBEAFE448548B945 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 		49FF863DD990A065C7685D6C7A5BCB83 /* ANFPager */ = {
 			isa = PBXGroup;
 			children = (
+				0875396C2698632900A711D8 /* Screenshots */,
 				8E7938C3EB7205BBC075BD58E3641139 /* Pod */,
 				0807F0601CE082C1AC9DAD47B7042BE3 /* Support Files */,
 				08EBF64E23CA033A00E790E9 /* PagerManager.swift */,
@@ -363,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0875396F2698633A00A711D8 /* screenshot1.gif in Resources */,
+				087539702698633A00A711D8 /* screenshot2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
