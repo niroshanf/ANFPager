@@ -126,6 +126,28 @@ class DefaultUIPageViewController: UIViewController {
         }
     }
     
+    //Public methods
+    public func getCurrentPageIndex() -> Int {
+        return self.currentIndex
+    }
+    
+    public func getCurrentPage() -> UIViewController? {
+        
+        guard let pagesArr = self.pages else {
+            return nil
+        }
+        
+        guard let vc = pagesArr[self.currentIndex] else {
+            return nil
+        }
+        
+        return vc
+    }
+    
+    public func getAllPages() -> [UIViewController?]? {
+        return self.pages
+    }
+    
 }
 
 extension DefaultUIPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {

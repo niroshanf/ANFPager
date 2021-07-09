@@ -71,6 +71,18 @@ public class PagerManager {
     public func moveToPage(index: Int) {
         self.pageViewController.moveToPage(index: index)
     }
+    
+    public func getCurrentPageIndex() -> Int {
+        return self.pageViewController.getCurrentPageIndex()
+    }
+    
+    public func getCurrentPage() -> UIViewController? {
+        return self.pageViewController.getCurrentPage()
+    }
+    
+    public func getAllPages() -> [UIViewController?]? {
+        return self.pageViewController.getAllPages()
+    }
 }
 
 
