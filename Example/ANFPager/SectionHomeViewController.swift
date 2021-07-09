@@ -10,18 +10,62 @@ import UIKit
 
 class SectionHomeViewController: UIViewController {
 
+    @IBOutlet weak var orientation: UILabel!
     @IBOutlet weak var section: UILabel!
     @IBOutlet weak var line: UIView!
+    @IBOutlet weak var tableview: UITableView!
     
-    var sectionName: String!
-    var lineColor: UIColor!
+    private var sectionName: String?
+    private var sectionColor: UIColor?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.section.text = self.sectionName
-        self.section.textColor = self.lineColor
-        self.line.backgroundColor = self.lineColor
+        self.orientation.text = config.shared.semanticContentAttribute == .forceLeftToRight ? "LTR Layout" : "RTL Layout"
+    
+        self.setupTable()
+        
+        self.view.semanticContentAttribute = config.shared.semanticContentAttribute
+        
+        if let name = self.sectionName {
+            self.section.text = name
+        }
+        
+        if let color = self.sectionColor {
+            self.section.textColor = color
+            self.line.backgroundColor = color
+        }
     }
+    
+    private func setupTable() {
+        self.tableview.estimatedRowHeight = 100
+        self.tableview.rowHeight = UITableView.automaticDimension
 
+        let nib: UINib = UINib(nibName: "ArticleCell", bundle: Bundle.main)
+        self.tableview.register(nib, forCellReuseIdentifier: "Cell")
+    }
+    
+    func setData(secName: String, color: UIColor) {
+        self.sectionName = secName
+        self.sectionColor = color
+    }
+}
+
+extension SectionHomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Int.random(in: (3...10))
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell: ArticleCell = tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ArticleCell
+        
+        return cell
+    }
 }

@@ -54,13 +54,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-b8-zrm">
-                                <rect key="frame" x="20" y="30" width="74" height="37"/>
+                                <rect key="frame" x="26" y="67" width="74" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s35-Mf-Aep">
-                                <rect key="frame" x="20" y="72" width="74" height="4"/>
+                                <rect key="frame" x="26" y="109" width="74" height="4"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="JUL-U9-Kha"/>
@@ -71,19 +71,41 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-a4-bwa">
+                                <rect key="frame" x="26" y="123" width="323" height="544"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xkh-eG-c1n" id="f4C-4f-VOW"/>
+                                    <outlet property="delegate" destination="Xkh-eG-c1n" id="1oR-zp-eWd"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RTL Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGf-ql-mhp">
+                                <rect key="frame" x="26" y="30" width="76" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pfM-b8-zrm" firstAttribute="leading" secondItem="0MO-fq-4g7" secondAttribute="leading" constant="20" id="278-Cy-JSr"/>
                             <constraint firstItem="s35-Mf-Aep" firstAttribute="trailing" secondItem="pfM-b8-zrm" secondAttribute="trailing" id="7rb-5U-2fV"/>
-                            <constraint firstItem="pfM-b8-zrm" firstAttribute="top" secondItem="Rsl-gH-gIE" secondAttribute="bottom" constant="30" id="Nkg-fr-Bst"/>
+                            <constraint firstItem="pfM-b8-zrm" firstAttribute="leading" secondItem="0MO-fq-4g7" secondAttribute="leadingMargin" constant="10" id="B7a-mE-06X"/>
+                            <constraint firstItem="nGf-ql-mhp" firstAttribute="top" secondItem="Rsl-gH-gIE" secondAttribute="bottom" constant="30" id="Dd3-Pp-YzS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RrI-a4-bwa" secondAttribute="trailing" constant="10" id="XIx-C7-bH0"/>
+                            <constraint firstItem="VhP-SL-uNT" firstAttribute="top" secondItem="RrI-a4-bwa" secondAttribute="bottom" id="b5B-Th-kyj"/>
                             <constraint firstItem="s35-Mf-Aep" firstAttribute="top" secondItem="pfM-b8-zrm" secondAttribute="bottom" constant="5" id="cwJ-WI-4IL"/>
                             <constraint firstItem="s35-Mf-Aep" firstAttribute="leading" secondItem="pfM-b8-zrm" secondAttribute="leading" id="fdx-Zv-Yyz"/>
+                            <constraint firstItem="RrI-a4-bwa" firstAttribute="top" secondItem="s35-Mf-Aep" secondAttribute="bottom" constant="10" id="ktv-lL-Bgc"/>
+                            <constraint firstItem="pfM-b8-zrm" firstAttribute="top" secondItem="nGf-ql-mhp" secondAttribute="bottom" constant="20" id="uFv-OY-dsv"/>
+                            <constraint firstItem="nGf-ql-mhp" firstAttribute="leading" secondItem="0MO-fq-4g7" secondAttribute="leadingMargin" constant="10" id="wDx-Z0-dbN"/>
+                            <constraint firstItem="RrI-a4-bwa" firstAttribute="leading" secondItem="0MO-fq-4g7" secondAttribute="leadingMargin" constant="10" id="xf1-7u-kQL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="line" destination="s35-Mf-Aep" id="u8i-Pv-9Vd"/>
+                        <outlet property="orientation" destination="nGf-ql-mhp" id="cX4-uz-sax"/>
                         <outlet property="section" destination="pfM-b8-zrm" id="lT0-NI-pcO"/>
+                        <outlet property="tableview" destination="RrI-a4-bwa" id="IC1-YF-HoW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZX-Fc-KMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

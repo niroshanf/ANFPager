@@ -7,9 +7,16 @@
 //
 
 import UIKit
-
-//Setup 1: Import Pod
 import ANFPager
+
+class config {
+    
+    public static var shared: config = config()
+    
+    public var semanticContentAttribute: UISemanticContentAttribute = .forceLeftToRight
+    
+    private init() {}
+}
 
 class ViewController: UIViewController {
 
@@ -24,9 +31,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Config that control the layout direction
+        config.shared.semanticContentAttribute = .forceRightToLeft
+        
         //Pagin view
         self.pager = PagerManager(container: self.detailContainer, pages: sectionsList.count, delegate: self)
-        self.pager.createPageViewController(orientation: .forceRightToLeft, transitionType: .scroll)
+        self.pager.createPageViewController(orientation: config.shared.semanticContentAttribute, transitionType: .scroll)
     }
 }
 
@@ -37,8 +47,7 @@ extension ViewController: PagerManagerDelegate {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
 
         let vc = storyBoard.instantiateViewController(withIdentifier: "SectionVC") as! SectionHomeViewController
-        vc.sectionName = self.sectionsList[index]
-        vc.lineColor = self.colors[index]
+        vc.setData(secName: self.sectionsList[index], color: self.colors[index])
         
         return vc
     }

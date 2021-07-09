@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		080274A82697059F000747EF /* SectionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080274A72697059F000747EF /* SectionHomeViewController.swift */; };
+		08753965269855B000A711D8 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08753963269855B000A711D8 /* ArticleCell.swift */; };
+		08753966269855B000A711D8 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08753964269855B000A711D8 /* ArticleCell.xib */; };
+		0875396A269860E600A711D8 /* screenshot2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08753968269860E600A711D8 /* screenshot2.gif */; };
+		0875396B269860E600A711D8 /* screenshot1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08753969269860E600A711D8 /* screenshot1.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +35,10 @@
 /* Begin PBXFileReference section */
 		007AC805FF40DD66BD3575AC /* Pods-ANFPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Example.release.xcconfig"; path = "Target Support Files/Pods-ANFPager_Example/Pods-ANFPager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		080274A72697059F000747EF /* SectionHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHomeViewController.swift; sourceTree = "<group>"; };
+		08753963269855B000A711D8 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		08753964269855B000A711D8 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		08753968269860E600A711D8 /* screenshot2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot2.gif; sourceTree = "<group>"; };
+		08753969269860E600A711D8 /* screenshot1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot1.gif; sourceTree = "<group>"; };
 		170B2E589BA8F7947511503E /* Pods-ANFPager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Tests.release.xcconfig"; path = "Target Support Files/Pods-ANFPager_Tests/Pods-ANFPager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		184DCF8758B6B4B57A1DE49A /* Pods-ANFPager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANFPager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ANFPager_Tests/Pods-ANFPager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		33C868EB9D63CE251BF51160 /* Pods_ANFPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANFPager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +79,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087539612698558400A711D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				080274A72697059F000747EF /* SectionHomeViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		087539622698559300A711D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				08753963269855B000A711D8 /* ArticleCell.swift */,
+				08753964269855B000A711D8 /* ArticleCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		0875396726985F1700A711D8 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				08753969269860E600A711D8 /* screenshot1.gif */,
+				08753968269860E600A711D8 /* screenshot2.gif */,
+			);
+			name = Screenshots;
+			sourceTree = "<group>";
+		};
 		37D91A14FD4A0F919179E5D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +139,10 @@
 		607FACD21AFB9204008FA782 /* Example for ANFPager */ = {
 			isa = PBXGroup;
 			children = (
+				0875396726985F1700A711D8 /* Screenshots */,
+				087539622698559300A711D8 /* Cells */,
+				087539612698558400A711D8 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				080274A72697059F000747EF /* SectionHomeViewController.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -248,6 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0875396B269860E600A711D8 /* screenshot1.gif in Resources */,
+				0875396A269860E600A711D8 /* screenshot2.gif in Resources */,
+				08753966269855B000A711D8 /* ArticleCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -333,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08753965269855B000A711D8 /* ArticleCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				080274A82697059F000747EF /* SectionHomeViewController.swift in Sources */,
