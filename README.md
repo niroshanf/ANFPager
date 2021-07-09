@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 [![Platform](https://img.shields.io/cocoapods/p/ANFPager.svg?style=flat)](https://cocoapods.org/pods/ANFPager)
 
+<p float="left">
+  <img src="https://github.com/niroshanf/ANFPager/blob/main/Screenshots/screenshot1.gif" width="300" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/niroshanf/ANFPager/blob/main/Screenshots/screenshot2.gif" width="300" />
+</p>
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
